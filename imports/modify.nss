@@ -54,6 +54,14 @@ menu(where=sel.count>0 type='file|dir|drive|namespace|back' mode="multiple" sepa
 	item(mode="single" type='file' where=sel.file.len != sel.file.title.len title=@sel.file.title cmd=command.copy(sel.file.title))
 	item(mode="single" type='file' where=sel.file.ext.len>0 title=sel.file.ext cmd=command.copy(sel.file.ext))
 }
+
+menu(separator="after" image=\uE290 title=title.select)
+{
+	item(title="All" image=icon.select_all cmd=command.select_all)
+	item(title="Invert" image=icon.invert_selection cmd=command.invert_selection)
+	item(title="None" image=icon.select_none cmd=command.select_none)
+}
+
 // ======================== END CUSTOM MENU ========================
 
 
