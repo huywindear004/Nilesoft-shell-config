@@ -1,5 +1,9 @@
 ﻿menu(mode="multiple" title='Develop' sep=sep.bottom image=\uE26E)
 {
+
+	item(title='NeoVim here' image=icon.nvim cmd='nvim' args='"@sel.path"')
+	
+	
 	//menu(mode="single" title='editors' image=\uE17A)
 	//{
 	//	item(title='Visual Studio Code' image=[\uE272, #22A7F2] cmd='code' args='"@sel.path"')

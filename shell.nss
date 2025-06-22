@@ -22,7 +22,7 @@ menu(mode="multiple" title=title.more_options image=icon.more_options)
 }
 
 // ================ START CUSTOM ================
-menu(mode="multiple" title="WinRar" image=icon.winrar pos=4){}
+//menu(mode="multiple" title="WinRAR" image=icon.winrar pos=4){}
 
 // ================ END CUSTOM ================
 

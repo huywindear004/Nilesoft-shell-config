@@ -38,8 +38,8 @@ modify(mode=mode.multiple
 
 menu(mode="none" type='back' expanded=true menu="New")
 {
-	$dt = sys.datetime("ymdHMSs")
-	item(title='New .txt File' cmd=io.file.create('@(dt).txt', '') pos="top" image=icon.txt_file)
+    $file_name = sys.datetime("dmyHMSs")
+	item(title='New .txt File' cmd=io.file.create('@(file_name).txt', '') pos="top" image=icon.txt_file)
 }
 
 menu(where=sel.count>0 type='file|dir|drive|namespace|back' mode="multiple" separator="after" title=title.copy_path image=icon.copy_path)
@@ -89,6 +89,6 @@ modify(find="IntelliJ IDEA|Visual Studio|code" menu="Develop" pos="top")
 
 modify(find="File manage/New File" menu="New")
 
-modify(find="Compress*|Add to*|Extract*|Winrar" menu="WinRar")
+//modify(find="Compress*|Add to*|Extract*|Winrar" menu="WinRAR")
 
 // ======================== END CUSTOM MODIFY ========================
